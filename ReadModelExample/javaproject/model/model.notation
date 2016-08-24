@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/viewpoints/policy/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_fFFroGofEeauZK-caGjDIA" type="PapyrusUMLClassDiagram" name="Class Diagram" measurementUnit="Pixel">
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/viewpoints/policy/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_fFFroGofEeauZK-caGjDIA" type="PapyrusUMLClassDiagram" name="Class Diagram" measurementUnit="Pixel">
   <children xmi:type="notation:Shape" xmi:id="_mauccGofEeauZK-caGjDIA" type="Package_Shape">
     <children xmi:type="notation:DecorationNode" xmi:id="_mavDgGofEeauZK-caGjDIA" type="Package_NameLabel"/>
     <children xmi:type="notation:BasicCompartment" xmi:id="_mavDgWofEeauZK-caGjDIA" type="Package_PackagedElementCompartment">
@@ -29,6 +29,14 @@
         <element xmi:type="uml:Class" href="model.uml#_kxHaUGofEeauZK-caGjDIA"/>
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kxP9MWofEeauZK-caGjDIA" x="33" y="3"/>
       </children>
+      <children xmi:type="notation:Shape" xmi:id="_8PqpQGo8EeauZK-caGjDIA" type="StereotypeComment">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_8PqpQWo8EeauZK-caGjDIA"/>
+        <styles xmi:type="notation:EObjectValueStyle" xmi:id="_8Pr3YGo8EeauZK-caGjDIA" name="BASE_ELEMENT">
+          <eObjectValue xmi:type="uml:Class" href="model.uml#_kxHaUGofEeauZK-caGjDIA"/>
+        </styles>
+        <element xsi:nil="true"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8PqpQmo8EeauZK-caGjDIA" x="233" y="3"/>
+      </children>
       <styles xmi:type="notation:TitleStyle" xmi:id="_mavDgmofEeauZK-caGjDIA"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mavDg2ofEeauZK-caGjDIA"/>
     </children>
@@ -41,4 +49,14 @@
     <owner xmi:type="uml:Model" href="model.uml#_fDcs4GofEeauZK-caGjDIA"/>
   </styles>
   <element xmi:type="uml:Model" href="model.uml#_fDcs4GofEeauZK-caGjDIA"/>
+  <edges xmi:type="notation:Connector" xmi:id="_8Pwv4Go8EeauZK-caGjDIA" type="StereotypeCommentLink" source="_kxP9MGofEeauZK-caGjDIA" target="_8PqpQGo8EeauZK-caGjDIA">
+    <styles xmi:type="notation:FontStyle" xmi:id="_8Pwv4Wo8EeauZK-caGjDIA"/>
+    <styles xmi:type="notation:EObjectValueStyle" xmi:id="_8Px-AGo8EeauZK-caGjDIA" name="BASE_ELEMENT">
+      <eObjectValue xmi:type="uml:Class" href="model.uml#_kxHaUGofEeauZK-caGjDIA"/>
+    </styles>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_8Pwv4mo8EeauZK-caGjDIA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_8PxW8Go8EeauZK-caGjDIA"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_8PxW8Wo8EeauZK-caGjDIA"/>
+  </edges>
 </notation:Diagram>

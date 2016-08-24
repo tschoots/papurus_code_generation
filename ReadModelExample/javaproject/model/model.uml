@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_fDcs4GofEeauZK-caGjDIA" name="UmlModelTest">
-  <packageImport xmi:type="uml:PackageImport" xmi:id="_fLE-4GofEeauZK-caGjDIA">
-    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
-  </packageImport>
-  <packagedElement xmi:type="uml:Package" xmi:id="_matOUGofEeauZK-caGjDIA" name="Package1">
-    <packagedElement xmi:type="uml:Class" xmi:id="_kxHaUGofEeauZK-caGjDIA" name="Class1"/>
-  </packagedElement>
-</uml:Model>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:tonprofile="http:///schemas/tonprofile/_8PV5IGo8EeauZK-caGjDIA/0" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/tonprofile/_8PV5IGo8EeauZK-caGjDIA/0 tonprofile.profile.uml#_8PYVYGo8EeauZK-caGjDIA">
+  <uml:Model xmi:id="_fDcs4GofEeauZK-caGjDIA" name="UmlModelTest">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_fLE-4GofEeauZK-caGjDIA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_matOUGofEeauZK-caGjDIA" name="Package1">
+      <packagedElement xmi:type="uml:Class" xmi:id="_kxHaUGofEeauZK-caGjDIA" name="Class1"/>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8PaKkGo8EeauZK-caGjDIA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8PbYsGo8EeauZK-caGjDIA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="tonprofile.profile.uml#_8PYVYGo8EeauZK-caGjDIA"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="tonprofile.profile.uml#_8PGBgGo8EeauZK-caGjDIA"/>
+      </profileApplication>
+    </packagedElement>
+  </uml:Model>
+  <tonprofile:golang xmi:id="_8PdN4Go8EeauZK-caGjDIA" base_Class="_kxHaUGofEeauZK-caGjDIA" generateCode="true"/>
+</xmi:XMI>

@@ -15,6 +15,7 @@ import org.eclipse.uml2.uml.Element;
 import org.eclipse.uml2.uml.Model;
 import org.eclipse.uml2.uml.Operation;
 import org.eclipse.uml2.uml.Package;
+import org.eclipse.uml2.uml.Profile;
 import org.eclipse.uml2.uml.Property;
 import org.eclipse.uml2.uml.UMLPackage;
 import org.eclipse.uml2.uml.resource.UMLResource;
@@ -49,6 +50,11 @@ public class ReadUmlModel {
 		Model umlModel = (Model) r.getContents().get(0);
 		
 		System.out.println(umlModel.getName());
+		
+		List<Profile> appliedProfiles = umlModel.getAllAppliedProfiles();
+		for (Profile p: appliedProfiles){
+			System.out.printf("applied profile : %s\n", p.getName());
+		}
 		
 	
 		

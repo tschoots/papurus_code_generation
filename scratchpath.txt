@@ -15,3 +15,8 @@ https://www.youtube.com/watch?v=Pim22rLtsW0
 http://www.programcreek.com/java-api-examples/index.php?api=org.eclipse.uml2.uml.resource.UMLResource
 http://www.programcreek.com/java-api-examples/index.php?api=org.eclipse.emf.common.util.URI
 http://download.eclipse.org/modeling/mdt/uml2/javadoc/5.2.0/
+
+http://www.programcreek.com/java-api-examples/index.php?source_dir=emfjson-jackson-master/src/test/java/org/emfjson/jackson/junit/support/TestSupport.java
+http://www.programcreek.com/java-api-examples/index.php?source_dir=EMFtoCSP-master/tests/fr.inria.atlanmod.emftocsp.tests/src/fr/inria/atlanmod/emftocsp/tests/test/unit/TestNonRegression.java
+
+
