@@ -2,14 +2,14 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="uml2jars/org.eclipse.emf.common_2.12.0.v20160420-0247.jar"/>
-	<classpathentry kind="lib" path="uml2jars/org.eclipse.emf.ecore_2.12.0.v20160420-0247.jar"/>
-	<classpathentry kind="lib" path="uml2jars/org.eclipse.emf.ecore.xmi_2.12.0.v20160420-0247.jar"/>
-	<classpathentry kind="lib" path="uml2jars/org.eclipse.emf.mapping.ecore2xml_2.9.0.v20160526-0356.jar"/>
-	<classpathentry kind="lib" path="uml2jars/org.eclipse.uml2.common_2.1.0.v20160516-0939.jar"/>
-	<classpathentry kind="lib" path="uml2jars/org.eclipse.uml2.types_2.0.0.v20160516-0939.jar"/>
-	<classpathentry kind="lib" path="uml2jars/org.eclipse.uml2.uml_5.2.0.v20160516-0939.jar"/>
-	<classpathentry kind="lib" path="uml2jars/org.eclipse.uml2.uml.profile.standard_1.0.100.v20160516-0939.jar"/>
-	<classpathentry kind="lib" path="uml2jars/org.eclipse.uml2.uml.resources_5.2.0.v20160516-0939.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.emf.common_2.12.0.v20160420-0247.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.emf.ecore_2.12.0.v20160420-0247.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.emf.ecore.xmi_2.12.0.v20160420-0247.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.emf.mapping.ecore2xml_2.9.0.v20160526-0356.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.uml2.common_2.1.0.v20160516-0939.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.uml2.types_2.0.0.v20160516-0939.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.uml2.uml_5.2.0.v20160516-0939.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.uml2.uml.profile.standard_1.0.100.v20160516-0939.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.uml2.uml.resources_5.2.0.v20160516-0939.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
