@@ -10,3 +10,8 @@ https://www.youtube.com/watch?v=gmf8CswqKcs
 
 # tutorial java generation
 https://www.youtube.com/watch?v=Pim22rLtsW0
+
+#sample code used
+http://www.programcreek.com/java-api-examples/index.php?api=org.eclipse.uml2.uml.resource.UMLResource
+http://www.programcreek.com/java-api-examples/index.php?api=org.eclipse.emf.common.util.URI
+http://download.eclipse.org/modeling/mdt/uml2/javadoc/5.2.0/
