@@ -1,0 +1,9 @@
+# for papyrus in NEON
+
+# code generation stuff can be found here
+http://download.eclipse.org/modeling/mdt/papyrus/components/designer/
+
+Papyrus base elements for code generation 1.0.3 
+
+Maybe you have to install QVT operation if generation doesn't work.
+https://www.youtube.com/watch?v=gmf8CswqKcs
