@@ -31,6 +31,7 @@ import org.eclipse.uml2.uml.Class;
 import org.eclipse.uml2.uml.Element;
 import org.eclipse.uml2.uml.Model;
 import org.eclipse.uml2.uml.Operation;
+import org.eclipse.uml2.uml.Package;
 import org.eclipse.uml2.uml.Property;
 import org.eclipse.uml2.uml.UMLPackage; 
 import org.eclipse.uml2.uml.resource.UMLResource; 
@@ -43,10 +44,18 @@ public class ReadUmlModel {
 		
 		System.out.println("hallo hallo");
 		
+		
+		String workingDirectory = System.getProperty("user.dir");
+		String seperator = System.getProperty("file.separator");
+		String modelPathURI = "file://" + workingDirectory + seperator + "model" + seperator + "model.uml";
+		
+		System.out.printf("model file : %s\n", modelPathURI);
+		
 		ResourceSet rSet = new ResourceSetImpl();
 		rSet.getPackageRegistry().put(UMLPackage.eNS_URI, UMLPackage.eINSTANCE);
 		rSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put(UMLResource.FILE_EXTENSION,  UMLResource.Factory.INSTANCE);
-		org.eclipse.emf.common.util.URI modelUri = URI.createURI("file:///home/tschoots/MAIASTRA_development/papyrus_java_ws/org.eclipse.uml2.examples.gettingstarted/ExtendedPO2.uml");
+		//org.eclipse.emf.common.util.URI modelUri = URI.createURI("file:///home/tschoots/MAIASTRA_development/papyrus_java_ws/org.eclipse.uml2.examples.gettingstarted/ExtendedPO2.uml");
+		org.eclipse.emf.common.util.URI modelUri = URI.createURI(modelPathURI);
 		//java.net.URI modelUri = new java.net.URI("file:///home/tschoots/MAIASTRA_development/papyrus_java_ws/org.eclipse.uml2.examples.gettingstarted/ExtendedPO2.uml");
 		UMLResource r = (UMLResource) rSet.getResource(modelUri, true);
 		EcoreUtil.resolveAll(r);
@@ -55,6 +64,10 @@ public class ReadUmlModel {
 		System.out.println(r.getEncoding());
 		System.out.println(r.getXMINamespace());
 		Model umlModel = (Model) r.getContents().get(0);
+		
+		System.out.println(umlModel.getName());
+		
+	
 		
 		
 		
@@ -74,13 +87,19 @@ public class ReadUmlModel {
 				List<Operation> ol = cl.getAllOperations();
 				for (Operation o : ol){
 					System.out.printf("operation : %s\n", o.getName());
-				}
-				
+				}				
+			}
+			
+			if (el instanceof Package) {
+				Package p = (Package) el;
+				System.out.printf("package : %s\n", p.getName());
 				
 			}
+			
+			
 		}
 		
-		System.out.println(umlModel.getName());
+		
 		
 		
 		System.out.println("the end");
