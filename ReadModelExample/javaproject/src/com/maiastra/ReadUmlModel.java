@@ -17,6 +17,7 @@ import org.eclipse.uml2.uml.Operation;
 import org.eclipse.uml2.uml.Package;
 import org.eclipse.uml2.uml.Profile;
 import org.eclipse.uml2.uml.Property;
+import org.eclipse.uml2.uml.Stereotype;
 import org.eclipse.uml2.uml.UMLPackage;
 import org.eclipse.uml2.uml.resource.UMLResource;
 import org.eclipse.uml2.uml.resources.util.UMLResourcesUtil; 
@@ -50,50 +51,57 @@ public class ReadUmlModel {
 		Model umlModel = (Model) r.getContents().get(0);
 		
 		System.out.println(umlModel.getName());
-		
+
 		List<Profile> appliedProfiles = umlModel.getAllAppliedProfiles();
 		for (Profile p: appliedProfiles){
 			System.out.printf("applied profile : %s\n", p.getName());
 		}
-		
-	
-		
-		
-		
+
 		Iterator<Element> it = umlModel.getOwnedElements().iterator();
-		while(it.hasNext()){
+		while(it.hasNext()) {
 			Element el = it.next();
-			if (el instanceof Class) {
-				Class cl = (Class) el;
-				System.out.printf("class : %s\n", cl.getName());
-				System.out.printf("\tin package : %s\n", cl.getPackage().getName());
-				
-				List<Property> pl = cl.getAllAttributes();
-				for (Property p : pl){
-					System.out.printf("\tattribute : %s\n", p.getName());
-				}
-				
-				List<Operation> ol = cl.getAllOperations();
-				for (Operation o : ol){
-					System.out.printf("operation : %s\n", o.getName());
-				}				
-			}
-			
-			if (el instanceof Package) {
-				Package p = (Package) el;
-				System.out.printf("package : %s\n", p.getName());
-				
-			}
-			
-			
+			processElement(el);
 		}
-		
-		
-		
 		
 		System.out.println("the end");
 
+	}
 
+	private static void processElement(Element el) {
+		if (el instanceof Class) {
+			Class cl = (Class) el;
+			System.out.printf("class : %s\n", cl.getName());
+			System.out.printf("\tin package : %s\n", cl.getPackage().getName());
+			
+			List<Property> pl = cl.getAllAttributes();
+			for (Property p : pl){
+				System.out.printf("\tattribute : %s\n", p.getName());
+			}
+			
+			List<Operation> ol = cl.getAllOperations();
+			for (Operation o : ol){
+				System.out.printf("\toperation : %s\n", o.getName());
+			}				
+
+			List <Stereotype> sl = cl.getAppliedStereotypes();
+			for (Stereotype s : sl){
+				System.out.printf("\tstereotype : %s\n", s.getName());
+				List <Property> al = s.getOwnedAttributes();
+				for (Property a : al){
+					System.out.printf("\tstereotype property : (%s:%s)\n", a.getName(), cl.getValue(s, a.getName()));
+				}
+			}
+		}
+		
+		if (el instanceof Package) {
+			Package p = (Package) el;
+			System.out.printf("package : %s\n", p.getName());
+			Iterator<Element> it = p.getOwnedElements().iterator();
+			while(it.hasNext()) {
+				Element subEl = it.next();
+				processElement(subEl);
+			}			
+		}
 	}
 
 }
