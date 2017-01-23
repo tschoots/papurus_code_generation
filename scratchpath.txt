@@ -28,3 +28,5 @@ https://www.youtube.com/watch?v=OX0zTdceyPA
 Feature proposal:
   - json structures modeling for golang
     need of a stereotype and how to represent, it basically always is some kind of tree 
+# java build path
+To make sure dependencies are included and work across workspaces, put all dependant jars in the lib folder of the OpenUML2File project. Then add them as dependencies: right-click project, Build Path - Configure Build Path... and use the Add JARs option (not Add External JARs)
