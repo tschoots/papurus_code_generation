@@ -19,4 +19,12 @@ http://download.eclipse.org/modeling/mdt/uml2/javadoc/5.2.0/
 http://www.programcreek.com/java-api-examples/index.php?source_dir=emfjson-jackson-master/src/test/java/org/emfjson/jackson/junit/support/TestSupport.java
 http://www.programcreek.com/java-api-examples/index.php?source_dir=EMFtoCSP-master/tests/fr.inria.atlanmod.emftocsp.tests/src/fr/inria/atlanmod/emftocsp/tests/test/unit/TestNonRegression.java
 
+# custom profile
+https://www.youtube.com/watch?v=OX0zTdceyPA
 
+
+
+***********************************************************************
+Feature proposal:
+  - json structures modeling for golang
+    need of a stereotype and how to represent, it basically always is some kind of tree 

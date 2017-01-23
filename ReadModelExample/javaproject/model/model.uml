@@ -5,7 +5,10 @@
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
     <packagedElement xmi:type="uml:Package" xmi:id="_matOUGofEeauZK-caGjDIA" name="Package1">
-      <packagedElement xmi:type="uml:Class" xmi:id="_kxHaUGofEeauZK-caGjDIA" name="Class1"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_kxHaUGofEeauZK-caGjDIA" name="ClassEen">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ZOWVcIbhEeaGfrdAWcVxmw" name="ClassTweeEnd" type="_vn3vsIYyEeaFB_FoF-PQGg" aggregation="shared" association="_ZONykIbhEeaGfrdAWcVxmw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_a8JOAIcjEeaGfrdAWcVxmw" client="_matOUGofEeauZK-caGjDIA" supplier="_vn3vsIYyEeaFB_FoF-PQGg"/>
       <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8PaKkGo8EeauZK-caGjDIA">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8PbYsGo8EeauZK-caGjDIA" source="http://www.eclipse.org/uml2/2.0.0/UML">
           <references xmi:type="ecore:EPackage" href="tonprofile.profile.uml#_8PYVYGo8EeauZK-caGjDIA"/>
@@ -13,6 +16,38 @@
         <appliedProfile xmi:type="uml:Profile" href="tonprofile.profile.uml#_8PGBgGo8EeauZK-caGjDIA"/>
       </profileApplication>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_vn3vsIYyEeaFB_FoF-PQGg" name="ClassTwee" visibility="package">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_HJdxwIYzEeaFB_FoF-PQGg" name="property">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_N-KYsIYzEeaFB_FoF-PQGg" name="port">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_V8fhMIYzEeaFB_FoF-PQGg" name="operation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ZONykIbhEeaGfrdAWcVxmw" memberEnd="_ZOWVcIbhEeaGfrdAWcVxmw _ZOW8gIbhEeaGfrdAWcVxmw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ZOVuYIbhEeaGfrdAWcVxmw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ZOVuYYbhEeaGfrdAWcVxmw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ZOW8gIbhEeaGfrdAWcVxmw" name="ClassEenEnd" type="_kxHaUGofEeauZK-caGjDIA" association="_ZONykIbhEeaGfrdAWcVxmw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vghSAIcYEeaGfrdAWcVxmw" value="4"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vgk8YIcYEeaGfrdAWcVxmw" value="9"/>
+      </ownedEnd>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_MlspkIY2EeaFB_FoF-PQGg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ml6sAIY2EeaFB_FoF-PQGg" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ml6sAYY2EeaFB_FoF-PQGg" key="Version" value="0.0.1"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ml6sAoY2EeaFB_FoF-PQGg" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ml6sA4Y2EeaFB_FoF-PQGg" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ml6sBIY2EeaFB_FoF-PQGg" key="Date" value="8/24/16 10:54 PM"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ml6sBYY2EeaFB_FoF-PQGg" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MluewIY2EeaFB_FoF-PQGg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="tonprofile.profile.uml#_8PYVYGo8EeauZK-caGjDIA"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="tonprofile.profile.uml#_8PGBgGo8EeauZK-caGjDIA"/>
+    </profileApplication>
   </uml:Model>
   <tonprofile:golang xmi:id="_8PdN4Go8EeauZK-caGjDIA" base_Class="_kxHaUGofEeauZK-caGjDIA" generateCode="true"/>
+  <tonprofile:golang xmi:id="_PxFAcIY2EeaFB_FoF-PQGg" base_Class="_vn3vsIYyEeaFB_FoF-PQGg"/>
 </xmi:XMI>

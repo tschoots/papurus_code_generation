@@ -1,0 +1,15 @@
+# this document describes the first thoughts of how to reprecent docker components in UML
+
+Docker container => UML component?
+  * Pro
+    - it's something you can stop/start like executable
+  * Con
+    - Although you can stop/start it has some dynamic node behavoir.
+    - inside a container other processes can be started.
+
+Remark:
+  Maybe we should consider what a linux kernel would be in UML or is this something that changes with the context.
+
+Dockerfile => UML class
+  * Pro
+    - it's a static 
